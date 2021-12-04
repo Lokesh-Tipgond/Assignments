@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>counter</title>
+</head>
+<style>
+    button{ height: 50px; width: 50px; font-size: xx-large; }
+    h4{ font-size: xx-large; }
+</style>
+<body>
+  <h4>Counter Program </h4>
+ <div style="text-align: center; ">
+  <button onclick="increment()">+</button>
+  <h4 id="number"></h4>
+  <button onclick="decremwnt()">-</button>
+</div>
+</body>
+<script>
+let a = 0;
+document.getElementById("number").innerText = a;
+
+function increment(){
+  a =a+1;
+  document.getElementById("number").innerText= a;
+}
+function decremwnt(){
+  a =a-1;
+  document.getElementById("number").innerText= a;
+
+}
+
+</script> 
+</html>
+
+
+

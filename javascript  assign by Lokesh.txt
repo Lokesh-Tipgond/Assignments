@@ -1,0 +1,53 @@
+1. addition of two number. 
+    function addtwonumbers(){
+    let a = prompt("please enter first number");
+    let b = prompt("please enter second number");
+    var c = parseInt(a) + parseInt(b);
+     console.log("The sum of "+a+ " and " +b+" is: " +c);
+    }
+2. Armstrong Number program.
+  
+      function armstr() { 
+       var arm=0,a,num;
+       num=prompt ("Enter any Number"); 
+       temp=num; 
+       while(temp>0) { 
+       a=temp%10;
+       temp=parseInt(temp/10);
+       arm=arm+a*a*a; 
+       } 
+       if(arm==num) { 
+        alert("Armstrong number"); 
+         }
+       else { 
+        alert("Not Armstrong number");
+         } 
+         }
+ 
+ 3. program to find the factors of an integer
+
+   const num = prompt('Enter a positive number: ');
+   console.log(`The factors of ${num} is:`);
+    for(let i = 1; i <= num; i++) {
+       if(num % i == 0) {
+        console.log(i);
+       }
+     }
+4. Function to check prime number
+           function primenumber() {
+              
+            var n, i, flag = true;
+              
+            n = prompt('Enter a number to check prime or not: ');
+            n = parseInt(n)
+            for(i = 2; i <= n - 1; i++)
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+                  
+            if (flag == true)
+                 console.log(n + " is prime");
+                else
+                 console.log(n + " is not prime");
+        }

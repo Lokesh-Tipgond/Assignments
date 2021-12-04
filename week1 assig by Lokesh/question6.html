@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>print left angle triangle pattern</title>
+</head>
+<body>
+  <h4>Print left angle triangle pattern </h4>
+  <input id="number" type="text">
+  <button onclick="show()"> show pattern</button>
+  <div id="star" ></div>
+</body>
+<script>
+
+
+function show(){
+  let n = document.getElementById("number").value;
+ 
+let string = "";
+for (let i = 1; i <= n; i++) {
+  
+  for (let j = 1; j <= n - i; j++) {
+    string += " ";
+  }
+  
+  for (let k = 0; k < 2 * i - 1; k++) {
+    string += "*";
+  }
+  string += "\n";
+}
+document.getElementById("star").innerText= string;
+}
+</script> 
+</html>

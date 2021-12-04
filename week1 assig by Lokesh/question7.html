@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CALCULATOR</title>
+</head>
+<body>
+  <h4>CALCULATOR Program </h4>
+  <input id="number1" type="number">
+  <input id="operator" type="+,-,*,/" placeholder="please enter maths oparator">
+  <input id="number2" type="number">
+  <button onclick="submit()">submit</button>
+  <h1 id="answer"></h1>
+
+</body>
+<script>
+    function submit(){
+    const operator = document.getElementById("operator").value;
+   
+  const number1 = parseFloat(document.getElementById("number1").value) ; 
+  const number2 = parseFloat( document.getElementById("number2").value) ; 
+    
+  let result; 
+      
+  if (operator == '+') {  
+      result = number1 + number2;  
+  }  
+  else if (operator == '-') { 
+      result = number1 - number2;  
+  }  
+  else if (operator == '*') { 
+      result = number1 * number2;  
+  }  
+  else {  
+      result = number1 / number2; 
+  }  
+    
+  document.getElementById("answer").innerText= result;
+}
+
+</script> 
+</html>
+
+
+
